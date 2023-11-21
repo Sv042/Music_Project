@@ -4,7 +4,8 @@ import {Icon} from "@iconify/react";
 import TextInput from "../components/shared/TextInput";
 import PasswordInput from "../components/shared/PasswordInput";
 import {Link, useNavigate} from "react-router-dom";
-import {makeUnauthenticatedPOSTRequest} from "../utils/serverHelpers";
+import {makeUnauthenticatedPOSTRequest} from "../utils/serverHelpers"
+
 
 const SignupComponent = () => {
     const [email, setEmail] = useState("");
@@ -43,7 +44,7 @@ const SignupComponent = () => {
     return (
         <div className="w-full h-full flex flex-col items-center">
             <div className="logo p-5 border-b border-solid border-gray-300 w-full flex justify-center">
-                <Icon icon="logos:spotify" width="150" />
+                <Icon icon="fa6-solid:music" width="80" />
             </div>
             <div className="inputRegion w-1/3 py-10 flex items-center justify-center flex-col">
                 {/*  I will have my 2 inputs(email and password) and I will have my sign up instead button*/}
@@ -95,7 +96,7 @@ const SignupComponent = () => {
                 </div>
                 <div className=" w-full flex items-center justify-center     my-8">
                     <button
-                        className="bg-green-400 font-semibold p-3 px-10 rounded-full"
+                        className="bg-blue-500 font-semibold p-3 px-10 rounded-full"
                         onClick={(e) => {
                             e.preventDefault();
                             signUp();

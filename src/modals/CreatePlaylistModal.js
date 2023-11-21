@@ -18,11 +18,11 @@ const CreatePlaylistModal = ({closeModal}) => {
 
     return (
         <div
-            className="absolute bg-black w-screen h-screen bg-opacity-50 flex justify-center items-center"
+            className="absolute bg-slight-dark-blue w-screen h-screen bg-opacity-50 flex justify-center items-center"
             onClick={closeModal}
         >
             <div
-                className="bg-app-black w-1/3 rounded-md p-8"
+                className="bg-lighter-dark-blue w-1/3 rounded-md p-8"
                 onClick={(e) => {
                     e.stopPropagation();
                 }}

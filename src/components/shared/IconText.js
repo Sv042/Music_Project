@@ -1,6 +1,5 @@
 import {Icon} from "@iconify/react";
 import {Link} from "react-router-dom";
-
 const IconText = ({iconName, displayText, active, targetLink, onClick}) => {
     return (
         <Link to={targetLink} className="block">
@@ -11,13 +10,13 @@ const IconText = ({iconName, displayText, active, targetLink, onClick}) => {
                 <div className="px-5 py-2">
                     <Icon
                         icon={iconName}
-                        color={active ? "white" : "gray"}
+                        color={active ? "white" : "black"}
                         fontSize={27}
                     />
                 </div>
                 <div
                     className={`${
-                        active ? "text-white" : "text-gray-400"
+                        active ? "text-white" : "text-black-400"
                     } text-sm font-semibold hover:text-white`}
                 >
                     {displayText}

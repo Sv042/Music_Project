@@ -33,12 +33,12 @@ const LoginComponent = () => {
     return (
         <div className="w-full h-full flex flex-col items-center">
             <div className="logo p-5 border-b border-solid border-gray-300 w-full flex justify-center">
-                <Icon icon="logos:spotify" width="150" />
+                <Icon icon="fa6-solid:music" width="100" />
             </div>
             <div className="inputRegion w-1/3 py-10 flex items-center justify-center flex-col">
                 {/*  I will have my 2 inputs(email and password) and I will have my sign up instead button*/}
                 <div className="font-bold mb-4">
-                    To continue, log in to Spotify.
+                    To continue, log in to AudioHolic.
                 </div>
                 <TextInput
                     label="Email address or username"
@@ -55,7 +55,7 @@ const LoginComponent = () => {
                 />
                 <div className=" w-full flex items-center justify-end my-8">
                     <button
-                        className="bg-green-400 font-semibold p-3 px-10 rounded-full"
+                        className="bg-blue-500 font-semibold p-3 px-10 rounded-full"
                         onClick={(e) => {
                             e.preventDefault();
                             login();
@@ -69,7 +69,7 @@ const LoginComponent = () => {
                     Don't have an account?
                 </div>
                 <div className="border border-gray-500 text-gray-500 w-full flex items-center justify-center py-4 rounded-full font-bold">
-                    <Link to="/signup">SIGN UP FOR SPOTIFY</Link>
+                    <Link to="/signup">SIGN UP FOR AUDIOHOLIC</Link>
                 </div>
             </div>
         </div>
